@@ -106,14 +106,12 @@ public class Floodwave<Corner: CornerType where Corner.Lake: LakeType, Corner.La
             .flatMap{ $0.sections }
             .set()
         moveSectionsRequest(otherCenters, hostLake)
-//        modify.sections(from: otherCenters)
         
         // Set new elevation for hostLake
         let elevations = hostLake.sections
             .flatMap{ $0.corners }
             .set()
         elevationRequest(elevations, lakeElevation)
-//            .forEach{ ModifyCorner(entity: $0).elevation(lakeElevation) }
         
         // Remove leftover lakes after merge
         try otherLakes.forEach{ removeLakeRequest($0) }
