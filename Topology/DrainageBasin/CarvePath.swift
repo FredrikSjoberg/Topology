@@ -14,7 +14,7 @@ import Foundation
 /// - border
 /// - a lake
 /// But elevation must be lower (ie carveTaretElevation:)
-class CarvePath<Corner: CornerType> : CarvePathType {
+class CarvePath<Corner: CornerType where Corner.Downslope == Corner, Corner.Adjacent == Corner> : CarvePathType {
     private let carveTargetType: (Corner) -> Bool = { $0.downslope != $0 || $0.isOcean || $0.isBorder || $0.lake != nil }
     private let carveTargetElevation: (Corner, Float) -> Bool = { $0.elevation < $1 }
     

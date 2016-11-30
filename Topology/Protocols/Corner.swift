@@ -9,11 +9,14 @@
 import Foundation
 
 public protocol CornerType: Hashable {
+    associatedtype Adjacent: Hashable
+    associatedtype Downslope
     associatedtype Lake
-    var elevation: Float { get }
-    var downslope: Self { get }
     
-    var adjacent: Set<Self> { get }
+    var elevation: Float { get }
+    var downslope: Downslope { get }
+    
+    var adjacent: Set<Adjacent> { get }
     
     var lake: Lake? { get }
     

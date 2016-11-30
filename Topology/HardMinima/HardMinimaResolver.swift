@@ -7,31 +7,30 @@
 //
 
 import Foundation
-import Game
 import Utilities
 
-public enum HardMinimaResolverError<Corner: CornerType> : Error {
+public enum HardMinimaResolverError<Corner: CornerType where Corner.Downslope == Corner, Corner.Adjacent == Corner> : Error {
     case MinimaIsOcean(corner: Corner)
     case NoSolutionPossibleFor(corner: Corner)
 }
 
 /// Tries to solve Zero Elevation Local Minima by finding a maximum elevation to raise corners to
-public class HardMinimaResolver<Corner: CornerType> {
+public class HardMinimaResolver<Corner: CornerType where Corner.Downslope == Corner, Corner.Adjacent == Corner> {
     private var lineage: Lineage<Corner>?
     private var unprocessed: Set<Corner>
     
-    init(corners: [Corner]) {
+    public init(corners: [Corner]) {
         let filtered = corners.filter{ $0.elevation == 0 }
         unprocessed = Set(filtered)
     }
     
-    let deltaEpsilon: Float = 0.9
+    private let deltaEpsilon: Float = 0.9
     
-    var isEmpty: Bool {
+    public var isEmpty: Bool {
         return unprocessed.isEmpty
     }
     
-    func addCorners(corners: [Corner]) {
+    public func addCorners(corners: [Corner]) {
         let filtered = corners.filter{ $0.elevation == 0 }
         unprocessed.formUnion(filtered)
     }
@@ -39,7 +38,7 @@ public class HardMinimaResolver<Corner: CornerType> {
     /// Will first and foremost look for any solution tree that has been generated.
     /// Secondly, it will create a new solution tree from the pool of unprocessed corners.
     /// Returns nil when processing is done!
-    func process() throws -> HardMinimaSolution<Corner>? {
+    public func process() throws -> HardMinimaSolution<Corner>? {
         if let leaf = try solution() {
             return leaf
         }

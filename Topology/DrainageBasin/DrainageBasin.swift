@@ -18,7 +18,7 @@ public enum DrainageBasinError<T: CornerType> : Error {
 }
 
 
-public class DrainageBasin<Corner: CornerType where Corner.Lake: LakeType, Corner.Lake.Location == Corner> {
+public class DrainageBasin<Corner: CornerType where Corner.Lake: LakeType, Corner.Lake.Location == Corner, Corner.Downslope == Corner, Corner.Adjacent == Corner> {
     public var elevationRequest: ((Corner, Float) -> Void)!
     public var outflowRequest: ((Corner.Lake, Corner) -> Void)!
     
@@ -37,6 +37,10 @@ public class DrainageBasin<Corner: CornerType where Corner.Lake: LakeType, Corne
     private let initialOceanHorizonFilter: (Corner) -> Bool = { ($0.isOcean && $0.adjacent.reduce(false){ $0 || !$1.isOcean }) }
     /// 
     private let isHorizonFilter: (Corner, Set<Corner>) -> Bool = { $1.intersection($0.adjacent).count > 0 }
+    
+    public init() {
+        
+    }
     
     public func errodeAndFlood(network: Set<Corner>) throws {
         // We allways start of with a "fresh" network set. That way calculating the initial horizon
@@ -95,7 +99,7 @@ public class DrainageBasin<Corner: CornerType where Corner.Lake: LakeType, Corne
                             // Lake borders should be evaluated as possible parts of the horizon
                             // NOTE: Should be possible to remove the filtering on 'unprocessed' since we should 
                             //       allways have unprocessed corners in lake border.
-                            let lakeBorders = lake.border
+                            let lakeBorders = lake.borderCorners
                                 .filter{ unprocessed.contains($0) &&  $0 != next }
                             
                             // Add a new pathRoot for each of the border corners

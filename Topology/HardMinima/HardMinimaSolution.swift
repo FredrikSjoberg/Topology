@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct HardMinimaSolution<Corner: CornerType> {
-    let corner: Corner
-    let elevation: Float
+public struct HardMinimaSolution<Corner: CornerType where Corner.Downslope == Corner, Corner.Adjacent == Corner> {
+    public let corner: Corner
+    public let elevation: Float
 }

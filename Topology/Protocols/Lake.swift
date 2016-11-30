@@ -13,7 +13,7 @@ public protocol LakeType {
     
     var outflow: Location? { get }
     var corners: Set<Location> { get }
-    var border: Set<Location> { get }
+    var borderCorners: Set<Location> { get }
     
     var elevation: Float { get }
 }
