@@ -8,12 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		769585D31DEED43600BF83E3 /* Topology.h in Headers */ = {isa = PBXBuildFile; fileRef = 769585D11DEED43600BF83E3 /* Topology.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		769585E21DEED52F00BF83E3 /* HardMinimaResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769585E11DEED52F00BF83E3 /* HardMinimaResolver.swift */; };
+		769585E41DEED53700BF83E3 /* DrainageBasin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769585E31DEED53700BF83E3 /* DrainageBasin.swift */; };
+		769585EA1DEED59500BF83E3 /* Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769585E91DEED59500BF83E3 /* Corner.swift */; };
+		769585EC1DEED64600BF83E3 /* Lake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769585EB1DEED64600BF83E3 /* Lake.swift */; };
+		769585EE1DEEDA3C00BF83E3 /* HardMinimaSolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769585ED1DEEDA3C00BF83E3 /* HardMinimaSolution.swift */; };
+		769585F01DEEE70200BF83E3 /* CarvePathType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769585EF1DEEE70200BF83E3 /* CarvePathType.swift */; };
+		769585F21DEEE72700BF83E3 /* PathTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769585F11DEEE72700BF83E3 /* PathTracker.swift */; };
+		769585F41DEEE7A900BF83E3 /* CarvePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769585F31DEEE7A900BF83E3 /* CarvePath.swift */; };
+		769585F61DEEE7C500BF83E3 /* ForceCarvePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769585F51DEEE7C500BF83E3 /* ForceCarvePath.swift */; };
+		769585F91DEEE7E100BF83E3 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 769585F81DEEE7E100BF83E3 /* Utilities.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		769585CE1DEED43600BF83E3 /* Topology.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Topology.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		769585D11DEED43600BF83E3 /* Topology.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Topology.h; sourceTree = "<group>"; };
 		769585D21DEED43600BF83E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		769585E11DEED52F00BF83E3 /* HardMinimaResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HardMinimaResolver.swift; sourceTree = "<group>"; };
+		769585E31DEED53700BF83E3 /* DrainageBasin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrainageBasin.swift; sourceTree = "<group>"; };
+		769585E91DEED59500BF83E3 /* Corner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Corner.swift; sourceTree = "<group>"; };
+		769585EB1DEED64600BF83E3 /* Lake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lake.swift; sourceTree = "<group>"; };
+		769585ED1DEEDA3C00BF83E3 /* HardMinimaSolution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HardMinimaSolution.swift; sourceTree = "<group>"; };
+		769585EF1DEEE70200BF83E3 /* CarvePathType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarvePathType.swift; sourceTree = "<group>"; };
+		769585F11DEEE72700BF83E3 /* PathTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathTracker.swift; sourceTree = "<group>"; };
+		769585F31DEEE7A900BF83E3 /* CarvePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarvePath.swift; sourceTree = "<group>"; };
+		769585F51DEEE7C500BF83E3 /* ForceCarvePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForceCarvePath.swift; sourceTree = "<group>"; };
+		769585F81DEEE7E100BF83E3 /* Utilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Utilities.framework; path = "../../../Library/Developer/Xcode/DerivedData/KnightsFee-aewuknfiyrfspxcrjzlorrhfmyqh/Build/Products/Debug-iphoneos/Utilities.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				769585F91DEEE7E100BF83E3 /* Utilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +53,7 @@
 			children = (
 				769585D01DEED43600BF83E3 /* Topology */,
 				769585CF1DEED43600BF83E3 /* Products */,
+				769585F71DEEE7E100BF83E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,8 +70,49 @@
 			children = (
 				769585D11DEED43600BF83E3 /* Topology.h */,
 				769585D21DEED43600BF83E3 /* Info.plist */,
+				769585E81DEED58800BF83E3 /* Protocols */,
+				769585DF1DEED50C00BF83E3 /* DrainageBasin */,
+				769585E01DEED50C00BF83E3 /* HardMinima */,
 			);
 			path = Topology;
+			sourceTree = "<group>";
+		};
+		769585DF1DEED50C00BF83E3 /* DrainageBasin */ = {
+			isa = PBXGroup;
+			children = (
+				769585E31DEED53700BF83E3 /* DrainageBasin.swift */,
+				769585F11DEEE72700BF83E3 /* PathTracker.swift */,
+				769585EF1DEEE70200BF83E3 /* CarvePathType.swift */,
+				769585F31DEEE7A900BF83E3 /* CarvePath.swift */,
+				769585F51DEEE7C500BF83E3 /* ForceCarvePath.swift */,
+			);
+			path = DrainageBasin;
+			sourceTree = "<group>";
+		};
+		769585E01DEED50C00BF83E3 /* HardMinima */ = {
+			isa = PBXGroup;
+			children = (
+				769585E11DEED52F00BF83E3 /* HardMinimaResolver.swift */,
+				769585ED1DEEDA3C00BF83E3 /* HardMinimaSolution.swift */,
+			);
+			path = HardMinima;
+			sourceTree = "<group>";
+		};
+		769585E81DEED58800BF83E3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				769585E91DEED59500BF83E3 /* Corner.swift */,
+				769585EB1DEED64600BF83E3 /* Lake.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		769585F71DEEE7E100BF83E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				769585F81DEEE7E100BF83E3 /* Utilities.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +159,7 @@
 					769585CD1DEED43600BF83E3 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 86UU6J7RQ5;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +196,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				769585F41DEEE7A900BF83E3 /* CarvePath.swift in Sources */,
+				769585E41DEED53700BF83E3 /* DrainageBasin.swift in Sources */,
+				769585EE1DEEDA3C00BF83E3 /* HardMinimaSolution.swift in Sources */,
+				769585EA1DEED59500BF83E3 /* Corner.swift in Sources */,
+				769585F21DEEE72700BF83E3 /* PathTracker.swift in Sources */,
+				769585F61DEEE7C500BF83E3 /* ForceCarvePath.swift in Sources */,
+				769585EC1DEED64600BF83E3 /* Lake.swift in Sources */,
+				769585F01DEEE70200BF83E3 /* CarvePathType.swift in Sources */,
+				769585E21DEED52F00BF83E3 /* HardMinimaResolver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +313,7 @@
 		769585D71DEED43600BF83E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 86UU6J7RQ5;
@@ -252,6 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.FredrikSjoberg.KnightsFee.Topology;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -259,6 +334,7 @@
 		769585D81DEED43600BF83E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 86UU6J7RQ5;
