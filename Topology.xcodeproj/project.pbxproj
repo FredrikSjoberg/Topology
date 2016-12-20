@@ -10,13 +10,16 @@
 		7647DDAD1E09636400C5B3E2 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 7647DDAC1E09636400C5B3E2 /* Cartfile */; };
 		7647DDAF1E096EA800C5B3E2 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7647DDAE1E096EA800C5B3E2 /* Utilities.framework */; };
 		7647DDB11E096EBB00C5B3E2 /* Utilities.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7647DDAE1E096EA800C5B3E2 /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7647DDB91E096EF100C5B3E2 /* TopologyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647DDB81E096EF100C5B3E2 /* TopologyTests.swift */; };
 		7647DDBB1E096EF100C5B3E2 /* Topology.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 769585CE1DEED43600BF83E3 /* Topology.framework */; };
 		7647DDC31E0970C600C5B3E2 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7647DDC11E0970C600C5B3E2 /* Nimble.framework */; };
 		7647DDC41E0970C600C5B3E2 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7647DDC21E0970C600C5B3E2 /* Quick.framework */; };
 		7647DDC61E0970E500C5B3E2 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7647DDC11E0970C600C5B3E2 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7647DDC71E0970E500C5B3E2 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7647DDC21E0970C600C5B3E2 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7647DDC81E0970EA00C5B3E2 /* Topology.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 769585CE1DEED43600BF83E3 /* Topology.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7647DDCD1E09720E00C5B3E2 /* HardMinimaResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647DDCC1E09720E00C5B3E2 /* HardMinimaResolverTests.swift */; };
+		7647DDCF1E09725200C5B3E2 /* TestCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647DDCE1E09725200C5B3E2 /* TestCorner.swift */; };
+		7647DDD11E09735300C5B3E2 /* TestCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647DDD01E09735300C5B3E2 /* TestCenter.swift */; };
+		7647DDD51E0973AD00C5B3E2 /* TestLake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647DDD41E0973AD00C5B3E2 /* TestLake.swift */; };
 		769585D31DEED43600BF83E3 /* Topology.h in Headers */ = {isa = PBXBuildFile; fileRef = 769585D11DEED43600BF83E3 /* Topology.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		769585E21DEED52F00BF83E3 /* HardMinimaResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769585E11DEED52F00BF83E3 /* HardMinimaResolver.swift */; };
 		769585E41DEED53700BF83E3 /* DrainageBasin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769585E31DEED53700BF83E3 /* DrainageBasin.swift */; };
@@ -71,10 +74,13 @@
 		7647DDAC1E09636400C5B3E2 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		7647DDAE1E096EA800C5B3E2 /* Utilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Utilities.framework; path = Topology/Carthage/Build/iOS/Utilities.framework; sourceTree = "<group>"; };
 		7647DDB61E096EF100C5B3E2 /* TopologyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopologyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7647DDB81E096EF100C5B3E2 /* TopologyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopologyTests.swift; sourceTree = "<group>"; };
 		7647DDBA1E096EF100C5B3E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7647DDC11E0970C600C5B3E2 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Topology/Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		7647DDC21E0970C600C5B3E2 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Topology/Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		7647DDCC1E09720E00C5B3E2 /* HardMinimaResolverTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HardMinimaResolverTests.swift; sourceTree = "<group>"; };
+		7647DDCE1E09725200C5B3E2 /* TestCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCorner.swift; sourceTree = "<group>"; };
+		7647DDD01E09735300C5B3E2 /* TestCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCenter.swift; sourceTree = "<group>"; };
+		7647DDD41E0973AD00C5B3E2 /* TestLake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLake.swift; sourceTree = "<group>"; };
 		769585CE1DEED43600BF83E3 /* Topology.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Topology.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		769585D11DEED43600BF83E3 /* Topology.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Topology.h; sourceTree = "<group>"; };
 		769585D21DEED43600BF83E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,10 +123,37 @@
 		7647DDB71E096EF100C5B3E2 /* TopologyTests */ = {
 			isa = PBXGroup;
 			children = (
-				7647DDB81E096EF100C5B3E2 /* TopologyTests.swift */,
+				7647DDC91E0971E700C5B3E2 /* DrainageBasin */,
+				7647DDCA1E0971E700C5B3E2 /* Floodwave */,
+				7647DDCB1E0971E700C5B3E2 /* HardMinima */,
 				7647DDBA1E096EF100C5B3E2 /* Info.plist */,
+				7647DDCE1E09725200C5B3E2 /* TestCorner.swift */,
+				7647DDD01E09735300C5B3E2 /* TestCenter.swift */,
+				7647DDD41E0973AD00C5B3E2 /* TestLake.swift */,
 			);
 			path = TopologyTests;
+			sourceTree = "<group>";
+		};
+		7647DDC91E0971E700C5B3E2 /* DrainageBasin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DrainageBasin;
+			sourceTree = "<group>";
+		};
+		7647DDCA1E0971E700C5B3E2 /* Floodwave */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Floodwave;
+			sourceTree = "<group>";
+		};
+		7647DDCB1E0971E700C5B3E2 /* HardMinima */ = {
+			isa = PBXGroup;
+			children = (
+				7647DDCC1E09720E00C5B3E2 /* HardMinimaResolverTests.swift */,
+			);
+			path = HardMinima;
 			sourceTree = "<group>";
 		};
 		769585C41DEED43600BF83E3 = {
@@ -322,7 +355,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7647DDB91E096EF100C5B3E2 /* TopologyTests.swift in Sources */,
+				7647DDD51E0973AD00C5B3E2 /* TestLake.swift in Sources */,
+				7647DDD11E09735300C5B3E2 /* TestCenter.swift in Sources */,
+				7647DDCF1E09725200C5B3E2 /* TestCorner.swift in Sources */,
+				7647DDCD1E09720E00C5B3E2 /* HardMinimaResolverTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +584,7 @@
 				7647DDC01E096EF100C5B3E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		769585C81DEED43600BF83E3 /* Build configuration list for PBXProject "Topology" */ = {
 			isa = XCConfigurationList;
