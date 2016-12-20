@@ -12,6 +12,11 @@
 		7647DDB11E096EBB00C5B3E2 /* Utilities.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7647DDAE1E096EA800C5B3E2 /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7647DDB91E096EF100C5B3E2 /* TopologyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647DDB81E096EF100C5B3E2 /* TopologyTests.swift */; };
 		7647DDBB1E096EF100C5B3E2 /* Topology.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 769585CE1DEED43600BF83E3 /* Topology.framework */; };
+		7647DDC31E0970C600C5B3E2 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7647DDC11E0970C600C5B3E2 /* Nimble.framework */; };
+		7647DDC41E0970C600C5B3E2 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7647DDC21E0970C600C5B3E2 /* Quick.framework */; };
+		7647DDC61E0970E500C5B3E2 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7647DDC11E0970C600C5B3E2 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7647DDC71E0970E500C5B3E2 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7647DDC21E0970C600C5B3E2 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7647DDC81E0970EA00C5B3E2 /* Topology.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 769585CE1DEED43600BF83E3 /* Topology.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		769585D31DEED43600BF83E3 /* Topology.h in Headers */ = {isa = PBXBuildFile; fileRef = 769585D11DEED43600BF83E3 /* Topology.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		769585E21DEED52F00BF83E3 /* HardMinimaResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769585E11DEED52F00BF83E3 /* HardMinimaResolver.swift */; };
 		769585E41DEED53700BF83E3 /* DrainageBasin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769585E31DEED53700BF83E3 /* DrainageBasin.swift */; };
@@ -48,6 +53,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7647DDC51E0970CA00C5B3E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7647DDC61E0970E500C5B3E2 /* Nimble.framework in CopyFiles */,
+				7647DDC71E0970E500C5B3E2 /* Quick.framework in CopyFiles */,
+				7647DDC81E0970EA00C5B3E2 /* Topology.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +73,8 @@
 		7647DDB61E096EF100C5B3E2 /* TopologyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopologyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7647DDB81E096EF100C5B3E2 /* TopologyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopologyTests.swift; sourceTree = "<group>"; };
 		7647DDBA1E096EF100C5B3E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7647DDC11E0970C600C5B3E2 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Topology/Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		7647DDC21E0970C600C5B3E2 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Topology/Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		769585CE1DEED43600BF83E3 /* Topology.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Topology.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		769585D11DEED43600BF83E3 /* Topology.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Topology.h; sourceTree = "<group>"; };
 		769585D21DEED43600BF83E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,6 +97,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7647DDC31E0970C600C5B3E2 /* Nimble.framework in Frameworks */,
+				7647DDC41E0970C600C5B3E2 /* Quick.framework in Frameworks */,
 				7647DDBB1E096EF100C5B3E2 /* Topology.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,6 +190,8 @@
 		769585F71DEEE7E100BF83E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7647DDC11E0970C600C5B3E2 /* Nimble.framework */,
+				7647DDC21E0970C600C5B3E2 /* Quick.framework */,
 				7647DDAE1E096EA800C5B3E2 /* Utilities.framework */,
 			);
 			name = Frameworks;
@@ -204,6 +227,7 @@
 				7647DDB21E096EF100C5B3E2 /* Sources */,
 				7647DDB31E096EF100C5B3E2 /* Frameworks */,
 				7647DDB41E096EF100C5B3E2 /* Resources */,
+				7647DDC51E0970CA00C5B3E2 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -336,6 +360,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 86UU6J7RQ5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Topology/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TopologyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FredrikSjoberg.TopologyTests;
@@ -348,6 +376,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 86UU6J7RQ5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Topology/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TopologyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FredrikSjoberg.TopologyTests;
