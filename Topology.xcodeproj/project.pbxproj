@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7647DDAD1E09636400C5B3E2 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 7647DDAC1E09636400C5B3E2 /* Cartfile */; };
+		7647DDAF1E096EA800C5B3E2 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7647DDAE1E096EA800C5B3E2 /* Utilities.framework */; };
+		7647DDB11E096EBB00C5B3E2 /* Utilities.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7647DDAE1E096EA800C5B3E2 /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7647DDB91E096EF100C5B3E2 /* TopologyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647DDB81E096EF100C5B3E2 /* TopologyTests.swift */; };
+		7647DDBB1E096EF100C5B3E2 /* Topology.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 769585CE1DEED43600BF83E3 /* Topology.framework */; };
 		769585D31DEED43600BF83E3 /* Topology.h in Headers */ = {isa = PBXBuildFile; fileRef = 769585D11DEED43600BF83E3 /* Topology.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		769585E21DEED52F00BF83E3 /* HardMinimaResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769585E11DEED52F00BF83E3 /* HardMinimaResolver.swift */; };
 		769585E41DEED53700BF83E3 /* DrainageBasin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769585E31DEED53700BF83E3 /* DrainageBasin.swift */; };
@@ -18,14 +22,40 @@
 		769585F21DEEE72700BF83E3 /* PathTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769585F11DEEE72700BF83E3 /* PathTracker.swift */; };
 		769585F41DEEE7A900BF83E3 /* CarvePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769585F31DEEE7A900BF83E3 /* CarvePath.swift */; };
 		769585F61DEEE7C500BF83E3 /* ForceCarvePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769585F51DEEE7C500BF83E3 /* ForceCarvePath.swift */; };
-		769585F91DEEE7E100BF83E3 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 769585F81DEEE7E100BF83E3 /* Utilities.framework */; };
 		769585FE1DEF006100BF83E3 /* Floodwave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769585FD1DEF006100BF83E3 /* Floodwave.swift */; };
 		769586001DEF015600BF83E3 /* Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769585FF1DEF015600BF83E3 /* Center.swift */; };
 		769586021DEF11D900BF83E3 /* PoolTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769586011DEF11D900BF83E3 /* PoolTracker.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7647DDBC1E096EF100C5B3E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 769585C51DEED43600BF83E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 769585CD1DEED43600BF83E3;
+			remoteInfo = Topology;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7647DDB01E096EB600C5B3E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7647DDB11E096EBB00C5B3E2 /* Utilities.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		7647DDAC1E09636400C5B3E2 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		7647DDAE1E096EA800C5B3E2 /* Utilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Utilities.framework; path = Topology/Carthage/Build/iOS/Utilities.framework; sourceTree = "<group>"; };
+		7647DDB61E096EF100C5B3E2 /* TopologyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopologyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7647DDB81E096EF100C5B3E2 /* TopologyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopologyTests.swift; sourceTree = "<group>"; };
+		7647DDBA1E096EF100C5B3E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		769585CE1DEED43600BF83E3 /* Topology.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Topology.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		769585D11DEED43600BF83E3 /* Topology.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Topology.h; sourceTree = "<group>"; };
 		769585D21DEED43600BF83E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,28 +68,45 @@
 		769585F11DEEE72700BF83E3 /* PathTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathTracker.swift; sourceTree = "<group>"; };
 		769585F31DEEE7A900BF83E3 /* CarvePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarvePath.swift; sourceTree = "<group>"; };
 		769585F51DEEE7C500BF83E3 /* ForceCarvePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForceCarvePath.swift; sourceTree = "<group>"; };
-		769585F81DEEE7E100BF83E3 /* Utilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Utilities.framework; path = "../../../Library/Developer/Xcode/DerivedData/KnightsFee-aewuknfiyrfspxcrjzlorrhfmyqh/Build/Products/Debug-iphoneos/Utilities.framework"; sourceTree = "<group>"; };
 		769585FD1DEF006100BF83E3 /* Floodwave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Floodwave.swift; sourceTree = "<group>"; };
 		769585FF1DEF015600BF83E3 /* Center.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Center.swift; sourceTree = "<group>"; };
 		769586011DEF11D900BF83E3 /* PoolTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoolTracker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7647DDB31E096EF100C5B3E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7647DDBB1E096EF100C5B3E2 /* Topology.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		769585CA1DEED43600BF83E3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				769585F91DEEE7E100BF83E3 /* Utilities.framework in Frameworks */,
+				7647DDAF1E096EA800C5B3E2 /* Utilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7647DDB71E096EF100C5B3E2 /* TopologyTests */ = {
+			isa = PBXGroup;
+			children = (
+				7647DDB81E096EF100C5B3E2 /* TopologyTests.swift */,
+				7647DDBA1E096EF100C5B3E2 /* Info.plist */,
+			);
+			path = TopologyTests;
+			sourceTree = "<group>";
+		};
 		769585C41DEED43600BF83E3 = {
 			isa = PBXGroup;
 			children = (
 				769585D01DEED43600BF83E3 /* Topology */,
+				7647DDB71E096EF100C5B3E2 /* TopologyTests */,
 				769585CF1DEED43600BF83E3 /* Products */,
 				769585F71DEEE7E100BF83E3 /* Frameworks */,
 			);
@@ -69,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				769585CE1DEED43600BF83E3 /* Topology.framework */,
+				7647DDB61E096EF100C5B3E2 /* TopologyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,7 +169,7 @@
 		769585F71DEEE7E100BF83E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				769585F81DEEE7E100BF83E3 /* Utilities.framework */,
+				7647DDAE1E096EA800C5B3E2 /* Utilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -149,6 +197,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		7647DDB51E096EF100C5B3E2 /* TopologyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7647DDBE1E096EF100C5B3E2 /* Build configuration list for PBXNativeTarget "TopologyTests" */;
+			buildPhases = (
+				7647DDB21E096EF100C5B3E2 /* Sources */,
+				7647DDB31E096EF100C5B3E2 /* Frameworks */,
+				7647DDB41E096EF100C5B3E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7647DDBD1E096EF100C5B3E2 /* PBXTargetDependency */,
+			);
+			name = TopologyTests;
+			productName = TopologyTests;
+			productReference = 7647DDB61E096EF100C5B3E2 /* TopologyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		769585CD1DEED43600BF83E3 /* Topology */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 769585D61DEED43600BF83E3 /* Build configuration list for PBXNativeTarget "Topology" */;
@@ -157,6 +223,7 @@
 				769585CA1DEED43600BF83E3 /* Frameworks */,
 				769585CB1DEED43600BF83E3 /* Headers */,
 				769585CC1DEED43600BF83E3 /* Resources */,
+				7647DDB01E096EB600C5B3E2 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -173,9 +240,15 @@
 		769585C51DEED43600BF83E3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = KnightsFee;
 				TargetAttributes = {
+					7647DDB51E096EF100C5B3E2 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 86UU6J7RQ5;
+						ProvisioningStyle = Automatic;
+					};
 					769585CD1DEED43600BF83E3 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 86UU6J7RQ5;
@@ -197,11 +270,19 @@
 			projectRoot = "";
 			targets = (
 				769585CD1DEED43600BF83E3 /* Topology */,
+				7647DDB51E096EF100C5B3E2 /* TopologyTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7647DDB41E096EF100C5B3E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		769585CC1DEED43600BF83E3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -213,6 +294,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7647DDB21E096EF100C5B3E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7647DDB91E096EF100C5B3E2 /* TopologyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		769585C91DEED43600BF83E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -234,7 +323,39 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7647DDBD1E096EF100C5B3E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 769585CD1DEED43600BF83E3 /* Topology */;
+			targetProxy = 7647DDBC1E096EF100C5B3E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		7647DDBF1E096EF100C5B3E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 86UU6J7RQ5;
+				INFOPLIST_FILE = TopologyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FredrikSjoberg.TopologyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7647DDC01E096EF100C5B3E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 86UU6J7RQ5;
+				INFOPLIST_FILE = TopologyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FredrikSjoberg.TopologyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		769585D41DEED43600BF83E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -344,6 +465,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Topology/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Topology/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -366,6 +491,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Topology/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Topology/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -380,6 +509,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7647DDBE1E096EF100C5B3E2 /* Build configuration list for PBXNativeTarget "TopologyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7647DDBF1E096EF100C5B3E2 /* Debug */,
+				7647DDC01E096EF100C5B3E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		769585C81DEED43600BF83E3 /* Build configuration list for PBXProject "Topology" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
