@@ -37,7 +37,7 @@ public class HardMinimaResolver<Corner: CornerType where Corner.Downslope == Cor
     
     /// Will first and foremost look for any solution tree that has been generated.
     /// Secondly, it will create a new solution tree from the pool of unprocessed corners.
-    /// Returns nil when processing is done!
+    /// Returns nil if processing is done!
     public func process() throws -> HardMinimaSolution<Corner>? {
         if let leaf = try solution() {
             return leaf
